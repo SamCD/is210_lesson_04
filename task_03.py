@@ -12,20 +12,23 @@ print TOTAL
 MINIMUM = 0
 x = 0
 for i in range(len(trans)):
+    x = 0
     for j in range(len(trans[i])):
         x += trans[i][j]
-        if MINIMUM <= x:
+        if x < MINIMUM:
+            MINIMUM = x
+        else:
             continue
-        else: MINIMUM = x
 print MINIMUM
 
 MAXIMUM = 0
-y = 0
-for i in range(len(trans)):
-    for j in range(len(trans[i])):
-        y = sum(trans[i][:-1])
-        if MAXIMUM >= y:
+
+for t in range(len(trans)):
+    y = 0
+    for s in range(len(trans[t])):
+        y += trans[t][s]
+        if MAXIMUM <= y:
+            MAXIMUM = y
+        else:
             continue
-        else: MAXIMUM = y
-        break
 print MAXIMUM
