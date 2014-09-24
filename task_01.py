@@ -22,5 +22,5 @@ print "\n *** min number of words in a line = " + str(MINIMUM_WORDS)
 SHAKE2 = data.SHAKESPEARE.split()
 AVERAGE_WORDS = float(len(SHAKE2) / len(SHAKE1))
 
-NUM_CRISPIAN = data.SHAKESPEARE.count("Crispin")
+NUM_CRISPIAN = data.SHAKESPEARE.count("Crispian")
 print NUM_CRISPIAN
