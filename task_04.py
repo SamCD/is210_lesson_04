@@ -21,5 +21,8 @@ for i in range(len(MP)):
             TEAM2.append(MP[i][:-1].strip())
         elif y % 3 == 0:
             TEAM3.append(MP[i][:-1].strip())
+TEAM1 = ",".join(TEAM1)
+TEAM2 = ",".join(TEAM2)
+TEAM3 = ",".join(TEAM3)
     
-print "Team 1 =", ",".join(TEAM1), "\nTeam 2 =", ",".join(TEAM2), "\nTeam 3 =", ",".join(TEAM3)
+print "Team 1 =", TEAM1, "\nTeam 2 =", TEAM2, "\nTeam 3 =", TEAM3
