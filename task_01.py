@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+"""Breaking down speech from Shakespeare"""
 
 import data
 TOTAL_WORDS = 0.00
@@ -23,4 +24,3 @@ print "\n *** min number of words in a line = " + str(MINIMUM_WORDS)
 print "\n *** max number of words in a line = " + str(MAXIMUM_WORDS)
 print "\n *** Amt of times the word 'Crispian' occurs = " + str(NUM_CRISPIAN)
 print "\n *** Avg words per line = " + str(AVERAGE_WORDS)
-
