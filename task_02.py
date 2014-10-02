@@ -6,7 +6,7 @@ import data
 ACCESS = False
 while ACCESS is False:
     X = raw_input("What is your password? (Attempt 1/3)")
-    if X== data.PASSWORD:
+    if X == data.PASSWORD:
         ACCESS = True
         print "Access granted"
         break
@@ -15,7 +15,7 @@ while ACCESS is False:
         if X == data.PASSWORD:
             ACCESS = True
             print "Access granted"
-            break          
+            break
         elif X != data.PASSWORD:
             X = raw_input("What is your password? (Final attempt)")
             if X == data.PASSWORD:
